@@ -51,6 +51,13 @@
     min-width: 150px;
 }
 
+.gpt3__cta-btn button:hover{
+    color: #F49867;
+    font-size: 19px;
+    padding: 1rem 2rem;
+    transition: 0.2s;
+}
+
 @media screen and (max-width: 650px) {
     .gpt3__cta{
         flex-direction: column;

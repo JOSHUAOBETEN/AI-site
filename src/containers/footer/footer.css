@@ -120,6 +120,10 @@
     cursor: pointer;
 }
 
+.gpt3__footer-links_div li:hover {
+    color: #F49867;
+}
+
 .gpt3__footer-copyright{
     margin-top: 2rem;
     text-align: center;

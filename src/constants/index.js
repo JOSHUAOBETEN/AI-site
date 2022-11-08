@@ -44,7 +44,7 @@ export const footerLinks = [
     },
 
     {
-        title: 'Get in touch<',
+        title: 'Get in touch',
         links: [
             {
                 name: "Crechterwoord K12 182 DK Alknjkcb",
