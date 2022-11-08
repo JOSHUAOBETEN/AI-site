@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css';
 import gpt3Logo from '../../assets/logo.svg'
+import { footerLinks } from '../../constants';
 
 const Footer = () => {
   return (
@@ -19,23 +20,16 @@ const Footer = () => {
             <p>Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved</p>
           </div>
           <div className='gpt3__footer-links_div'>
-            <h4>Links</h4>
-            <p>Overons</p>
-            <p>Social Media</p>
-            <p>Counters</p>
-            <p>Contact</p>
-          </div>
-          <div className='gpt3__footer-links_div'>
-            <h4>Company</h4>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
-            <p>Contact</p>
-          </div>
-          <div className='gpt3__footer-links_div'>
-            <h4>Get in touch</h4>
-            <p>Crechterwoord K12 182 DK Alknjkcb</p>
-            <p>085-132567</p>
-            <p>info@payme.net</p>
+            {footerLinks.map((footerLink) =>
+            <div className='gpt3__footer-links_div-content' key={footerLink.key}>
+              <h4>{footerLink.title}</h4>,
+              <ul>
+                {footerLink.links.map((link, index) =>
+                <li key={link.name}>{link.name}</li>  
+                )}
+              </ul>
+            </div>
+            )}
           </div>
         </div>
 
